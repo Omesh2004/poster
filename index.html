@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      body{
+          background-color: #D2D2D2;
+          background-image:
+          repeating-linear-gradient(
+              to right, transparent 0 100px,
+              #25283b22 100px 101px
+          ),
+          repeating-linear-gradient(
+              to bottom, transparent 0 100px,
+              #25283b22 100px 101px
+          );
+      }
+      
+      body::before{
+          position: absolute;
+          width: min(1400px, 90vw);
+          top: 10%;
+          left: 50%;
+          height: 90%;
+          transform: translateX(-50%);
+          content: '';
+          background-image: url(images/bg.png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-position: top center;
+          pointer-events: none;
+      }
+  </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Contacts</a>
+            <a href="">Info</a>
+        </nav>
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="images/top_1.png">
+                <div class="content">
+                    
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        <h2>Some of our best posters are here</h2>
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                       <a href="https://www.instagram.com/startup_walltrio/profilecard/?igsh=dnI0dTNuaDVxdTNz
+"> <button>SUBSCRIBE</button></a> 
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/gojo_2.png">
+                <div class="content">
+                    <div class="author">LUNDEV</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                      <h2>Some of our best posters </h2> 
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <a href="https://www.instagram.com/startup_walltrio/profilecard/?igsh=dnI0dTNuaDVxdTNz
+                        "> <button>SUBSCRIBE</button></a> 
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/stranger_things_2.webp">
+                <div class="content">
+                    <div class="author">WALLATRIO</div>
+                    <div class="title">OUR COLLECTIONS</div>
+                    <div class="topic">ANIME</div>
+                    <div class="des">
+                      <h2>Some of our best posters </h2> 
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <a href="https://www.instagram.com/startup_walltrio/profilecard/?igsh=dnI0dTNuaDVxdTNz
+                        "> <button>SUBSCRIBE</button></a> 
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/sukuna_1.png">
+                <div class="content">
+                    
+                    
+                    <div class="des">
+                       <h2>Some of our best posters </h2> 
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <a href="https://www.instagram.com/startup_walltrio/profilecard/?igsh=dnI0dTNuaDVxdTNz
+                        "> <button>SUBSCRIBE</button></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="images/top_1.png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/gojo_2.png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/stranger_things_2.webp">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/sukuna_1.png">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+    <div class="banner">
+      <div class="slider" style="--quantity: 10">
+          <div class="item" style="--position: 1"><img src='./images/got_1.png' alt=""></div>
+          <div class="item" style="--position: 2"><img src='./images/inozuke_1.jpg' alt=""></div>
+          <div class="item" style="--position: 3"><img src= './images/madara_1.jpg' alt=""></div>
+          <div class="item" style="--position: 4"><img src='./images/nari_jiraya_1.jpg' alt=""></div>
+          <div class="item" style="--position: 5"><img src='./images/naruto_1.jpg'alt=""></div>
+          <div class="item" style="--position: 6"><img src='./images/tanjiro_1.jpg' alt=""></div>
+          <div class="item" style="--position: 7"><img src=  './images/virat_1.png'alt=""></div>
+          <div class="item" style="--position: 8"><img src='./images/team_blue_1.png' alt=""></div>
+          <div class="item" style="--position: 9"><img src='./images/goku_1.jpg' alt=""></div>
+          <div class="item" style="--position: 10"><img src="./images/dragon_10.jpg" alt=""></div>
+      </div>
+      <div class="content">
+          <h1 data-content="WALLATRIO">
+              WALLATRIO
+              
+    
+   
+    
+    
+   
+    
+    
+          </h1>
+          
+          <div class="model"></div>
+      </div>
+  </div>
+  <div class="grid-container">
+    <!-- Card Components -->
+    <div class="card">
+      <img src="./images/spiderman_1.png" alt="Card Image">
+      <h2 class="card-title">1</h2>
+  
+    </div>
+    <div class="card">
+      <img src="./images/spiderman_2.png" alt="Card Image">
+      <h2 class="card-title"> 2</h2>
+  
+    </div>
+    <div class="card">
+      <img src="./images/batman_1.png" alt="Card Image">
+      <h2 class="card-title"> 3</h2>
+    
+    </div>
+    <div class="card">
+      <img src="./images/naruto_1.jpg" alt="Card Image">
+      <h2 class="card-title">4</h2>
+      
+    </div>
+    <div class="card">
+      <img src="./images/nari_jiraya_1.jpg" alt="Card Image">
+      <h2 class="card-title"> 5</h2>
+   
+    </div>
+    <div class="card">
+      <img src="./images/got_1.png" alt="Card Image">
+      <h2 class="card-title"> 6</h2>
+     
+    </div>
+    <div class="card">
+      <img src="./images/tanjiro_1.jpg" alt="Card Image">
+      <h2 class="card-title"> 7</h2>
+     
+    </div>
+    <div class="card">
+      <img src="./images/giyu_1.png" alt="Card Image">
+      <h2 class="card-title"> 8</h2>
+      
+    </div>
+    <div class="card">
+      <img src="./images//gojo_1.webp" alt="Card Image">
+      <h2 class="card-title"> 9</h2>
+    
+    </div>
+    <div class="card">
+      <img src="./images//top_1.png" alt="Card Image">
+      <h2 class="card-title"> 10</h2>
+    
+    </div>
+    <div class="card">
+      <img src="./images//virat_1.png" alt="Card Image">
+      <h2 class="card-title"> 11</h2>
+    
+    </div>
+    <div class="card">
+      <img src="./images//madara_1.jpg" alt="Card Image">
+      <h2 class="card-title"> 12</h2>
+    
+    </div>
+    
+    <!-- Add more cards as needed -->
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <!-- Stats Section -->
+      <div class="stats">
+        <p class="stat-text">Active Users: 70</p>
+        <p class="stat-text">Sales Till Now: 120</p>
+        <a href="https://forms.gle/NNhpDrgjUN5mpmvh9">
+          <button class="details-button">For more details, click here</button>
+        </a>
+      </div>
+
+      <!-- Team Section -->
+      <div class="team-section">
+        <h3 class="team-title">Team Wallatrio</h3>
+        <p class="team-subtitle">Meet our talented team members</p>
+        <div class="team-members">
+          <div class="team-member">Omesh</div>
+          <div class="team-member">Magan</div>
+          <div class="team-member">Sumit</div>
+          <div class="team-member">Swapnil</div>
+          <div class="team-member">Chandrashekhar</div>
+          <div class="team-member">Aditya</div>
+          <div class="team-member">Divyansh</div>
+          <div class="team-member">Vansh</div>
+          <div class="team-member">Rakesh</div>
+          <div class="team-member">Saksham</div>
+        </div>
+      </div>
+
+      <div class="footer-note">
+        &copy; 2024 Wallatrio. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
